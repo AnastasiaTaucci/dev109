@@ -1,0 +1,84 @@
+* {
+    font-family: Arial, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+body {
+    width: 90%;
+    margin: 0 auto;
+background-image: url("https://img.freepik.com/free-vector/hand-drawn-flowers-leaves-background_79603-2342.jpg?t=st=1713838915~exp=1713842515~hmac=e8681d0e78b470390c0a8d3c237d7f9a36db687b227f34b11f5ed08db3dc783b&w=1380");
+}
+
+#content {
+    overflow: auto;
+}
+
+#nav, #feature, #footer {
+    margin: 1%;
+}
+
+.column1, .column2, .column3 {
+    width: 31.3%;
+    float: left;
+    margin: 1%;
+}
+
+.column3 {
+    margin-right: 0%;
+}
+
+li {
+    display: inline;
+    padding: 0.5em;
+}
+
+#nav, #footer {
+    padding: 0.5em 0;
+}
+
+#feature, .article {
+    height: 10em;
+    margin-bottom: 1em;
+}
+
+h1 {
+color: red;
+font-family: Pacifico, cursive;
+}
+
+#feature p {
+    color: MediumSlateBlue;
+}
+
+/*  background Colors */
+
+#nav {
+background-color: mediumorchid;
+}
+
+#feature {
+color: MediumSlateBlue;
+background-color: hsl(266, 100%, 96%);
+background-image: url("https://img.freepik.com/free-vector/hand-drawn-flat-design-saffron-illustration_23-2149288356.jpg?size=626&ext=jpg");
+background-size: contain;
+background-repeat: no-repeat;
+background-position: right;
+}
+
+.column1 {
+background-color: plum;
+}
+
+.column2 {
+background-color: maroon;
+}
+
+.column3 {
+background-color: indianred;
+}
+
+#footer {
+background-color: MediumSlateBlue;
+}
+
