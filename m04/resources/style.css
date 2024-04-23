@@ -7,7 +7,10 @@
 body {
     width: 90%;
     margin: 0 auto;
-background-image: url("https://img.freepik.com/free-vector/hand-drawn-flowers-leaves-background_79603-2342.jpg?t=st=1713838915~exp=1713842515~hmac=e8681d0e78b470390c0a8d3c237d7f9a36db687b227f34b11f5ed08db3dc783b&w=1380");
+background-image: url("https://img.freepik.com/free-vector/hand-drawn-flowers-leaves-background_79603-2341.jpg?t=st=1713840108~exp=1713843708~hmac=e05d6a0ea20ac955ee0d0939da15ce4dda23b477b568f627d32f66f7798b7601&w=1380");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 }
 
 #content {
