@@ -8,8 +8,12 @@ html, body {
     height:100%;
 }
 
+#clear {
+    clear: both;
+}
 
 /* Heading style */
+
 
 #title {
     position: fixed;
@@ -33,20 +37,29 @@ html, body {
 
 /* body style */
 
+
 body {
     background-image: url("http://3.bp.blogspot.com/-aNRb0w9Uu2E/Uk0w1v9lXjI/AAAAAAAAHrM/RipxfZqlQQ4/s1600/Texture-Backgrounds-Wallpaper-HD.jpg");
-    /background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
 }
 
 
-
 /*Container style */
 
+
 #container {
-    margin: 15% auto 5%;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#board {
+    min-width: 800px;
 }
 
 
@@ -54,14 +67,10 @@ body {
 /* Row style */
 
 .row {
-    position: relative;
     margin-left: 10%;
     margin-right: 10%;
 }
 
-.clear {
-    clear: both;
-}
 
 
 
@@ -84,11 +93,9 @@ body {
 
 img {
     height: 50px;
-    margin-left: 25px;
+    margin-left: 15px;
     margin-top: 5px;
 }
-
-
 
 
 /* Footer style */
@@ -103,10 +110,10 @@ footer {
 
 #footer {
     text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 5px auto;
 }
 
 footer p {
     display: inline-block;
 }
+
