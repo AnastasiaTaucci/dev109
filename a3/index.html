@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Week 6 - BC - Rhombus">
+    <meta charset="utf-8">
+    <title>Rhombus</title>
+</head>
+<body>
+    <h1>Anastasia Taucci</h1>
+    <label>What is the size of Rhombus?</label><br>
+    <input type="text" id="rHeight" value="6" size="5">
+    <br>
+    <label>Choose color for Even position</label><br>
+    <select id="colorEven">
+        <option value="#87CEFA">LightSkyBlue</option>
+        <option value="#FF0000">Red</option>
+        <option value="#FF9900">Orange</option>
+    </select><br>
 
+    <label>Choose color for Odd position</label><br>
+    <select id="colorOdd">
+        <option value="#FF0099">Pink</option>
+        <option value="#33FF00">Green</option>
+        <option value="#191970">MidnightBlue</option>
+    </select>
+    <br>
+    <label>Choose symbol for Rhombus</label>
+    <select id="symbol">
+        <option value="#">#</option>
+        <option value="%">%</option>
+        <option value="$">$</option>
+        <option value="@">@</option>
+    </select>
+    <br>
+    <button onclick="createRhombus(document.getElementById('rHeight').value,
+document.getElementById('colorEven').value,
+document.getElementById('colorOdd').value,
+document.getElementById('symbol').value);">Display Rhombus</button>
+    <div style="text-align: center;">Rhombus</div>
+    <div id="up" style="text-align: center;"></div>
+    <div id="down" style="text-align: center;"></div>
+
+
+    <script src="./Scripts/main.js"></script>
+
+</body>
+</html>
