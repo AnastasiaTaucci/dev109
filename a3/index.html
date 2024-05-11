@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="description" content="Week 6 - BC - Rhombus">
     <meta charset="utf-8">
     <title>Rhombus</title>
 </head>
+
 <body>
     <h1>Anastasia Taucci</h1>
     <label>What is the size of Rhombus?</label><br>
@@ -36,12 +38,20 @@
 document.getElementById('colorEven').value,
 document.getElementById('colorOdd').value,
 document.getElementById('symbol').value);">Display Rhombus</button>
-    <div style="text-align: center;">Rhombus</div>
-    <div id="up" style="text-align: center;"></div>
-    <div id="down" style="text-align: center;"></div>
-
+    <br>
+    <div style="float: left;">
+        <div id="upLeft">Rhombus</div>
+        <div id="downLeft"></div>
+    </div>
+    <div style="float: left;">
+        <div id="upRight"></div>
+        <div id="downRight"></div>
+    </div>
+    
+    
 
     <script src="./Scripts/main.js"></script>
 
 </body>
+
 </html>
