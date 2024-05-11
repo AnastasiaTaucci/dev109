@@ -116,7 +116,3 @@ function downLeft(pHeight, pColorEven, pColorOdd, pSymbol) {
 
     document.getElementById("downLeft").innerHTML = rLine;
 }
-
-
-    document.getElementById("down").innerHTML = rLine;
-}
