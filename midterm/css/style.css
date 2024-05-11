@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 html, body {
@@ -7,8 +8,7 @@ html, body {
     padding: 0px;
     background-color: #e9ebef;
     height: 100%;
-    background-image: url(../images/background.jpg);
-    background-position-y: -130px;
+    background-image: url(../images/background1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -17,15 +17,13 @@ html, body {
 nav li {
     display: inline-block;
     letter-spacing: 1.5px;
-    text-decoration: none;
-    margin: 0 10px;
+    margin: 0 30px;
     font-size: 1.75rem;
     font-family: 'Merriweather', serif;
 }
 
 nav a:link {
     color: darkblue;
-    text-decoration: none;
     transition: color 0.25s;
 }
 
@@ -38,7 +36,6 @@ nav a:hover {
 }
 
 nav ul {
-    width: 80%;
     margin: 0 auto;
     text-align: center;
 }
@@ -72,4 +69,122 @@ h1 {
     position: relative;
     top: 10%;
 }
+
+
+
+
+
+
+
+/* Artifacts  */
+
+#artifacts_container {
+    position: relative;
+    top: 100px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.artifacts img {
+    height: 200px;
+    width: 355px;
+    
+}
+
+.artifacts img:hover {
+    height: 209px;
+    width: 371px;
+    transition: 0.25s;    
+}
+
+a h3{
+    color: blanchedalmond;
+    font-size: 1.6rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+a h3:hover {
+    color: #bfd6d3;
+    transition: color 0.25s;    
+}
+
+.artifacts p {
+    color: #bfd6d3;
+    font-size: 1.5rem;
+    margin-top: 2%;
+}
+
+.artifacts {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.artifacts div {
+    padding-left: 1%;
+}
+
+
+
+
+/* Contact Me */
+
+#contact {
+    height: 90%;
+    top: 20%;
+    position: relative;
+    margin-left: 5%;
+}
+
+h2 {
+    font-size: 4.5rem;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 3px;
+    color: #eef0e7;
+}
+
+form {
+    font-size: 2rem;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 3px;
+    color: #eef0e7;
+    max-width: 40%;
+}
+
+.form-container {
+    text-align: right;
+    max-width: 60% ;
+    position: relative;
+    left: 0;
+}
+
+fieldset {
+    border-radius: 10px;
+    padding: 30px;
+    backdrop-filter: blur(20px);
+    border: 3px solid white;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+legend {
+    text-align: left;
+}
+
+#button {
+    min-width: 150px;
+    min-height: 30px;
+    font-size: 1rem;
+    color: #6495ED;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
 
