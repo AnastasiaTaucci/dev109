@@ -76,13 +76,17 @@ h1 {
 
 /* Artifacts  */
 
-#artifacts_container {
+#artifacts-container {
     position: relative;
     top: 100px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+#artifacts-container h1{
+    font-size: 3rem;
 }
 
 .artifacts img {
@@ -194,6 +198,7 @@ legend {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    height: 90%;
     
 }
 #validated-container h1 {
@@ -203,28 +208,65 @@ legend {
 .validated {
     display: flex;
     width: 90%;
+    height: 90%;
     margin: 0 auto;
     font-size: 2rem;
     color: bisque;
+    overflow: auto;
 }
 
 .validated img {
-    height: 135px;
-    width: 240px;
+    height: 108px;
+    width: 192px;
 }
 
-#html, #css {
-    width: 50%;
+.validated img:active, .validated img:focus {
+    height: 90vh;
+    width: auto; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    z-index: 9999; 
+    transform: translate(-50%, -50%); 
+    filter: brightness(0.8); 
 }
+
+.validated img:hover {
+    filter: brightness(0.8);
+}
+
+
+#html {
+    width: 60%;
+}
+
 
 .images-container {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    overflow: auto;
 }
 
-.validated p {
-    margin: 2%;
+#css {
+    width: 40%;
 }
+.validated p {
+    margin: 5%;
+}
+
+#validated-container h1 {
+    font-size: 3rem;
+    margin-top: 5%;
+}
+
+.validated h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+
+
+
