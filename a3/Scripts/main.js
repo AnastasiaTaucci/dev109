@@ -65,7 +65,7 @@ function upLeft(pHeight, pColorEven, pColorOdd, pSymbol) {
         rLine += "<p>";
         // add white space on the left
         for (k = pHeight - i; k > 0; k--) {
-            rLine += "<span style='color: white'>*</span>";
+            rLine += "<span style='color: white'>" + pSymbol+ "</span>";
         }
         //Create each line on the Rhombus
         for (j = 0; j < i; j++) {
@@ -94,7 +94,7 @@ function downLeft(pHeight, pColorEven, pColorOdd, pSymbol) {
         rLine += "<p>";
         // add white space on the left
         for (k = 0; k < pHeight - i; k++) {
-            rLine += "<span style='color: white'>*</span>";
+            rLine += "<span style='color: white'>" + pSymbol+ "</span>";
             console.log(rLine);
         }
         //Create each line on the Rhombus
