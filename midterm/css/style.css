@@ -14,6 +14,12 @@ html, body {
     overflow: hidden;
 } 
 
+#currentPage a{
+    color: #dfe6be;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
 nav li {
     display: inline-block;
     letter-spacing: 1.5px;
@@ -22,13 +28,9 @@ nav li {
     font-family: 'Merriweather', serif;
 }
 
-nav a:link {
+nav a {
     color: darkblue;
     transition: color 0.25s;
-}
-
-nav a:visited {
-    color: darkblue;
 }
 
 nav a:hover {
@@ -38,6 +40,9 @@ nav a:hover {
 nav ul {
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav {
