@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Buy Groceries</title>
+</head>
+<body>
+    <div id="page">
+        <h1 id="header">List</h1>
+        <h2>Buy groceries</h2>
+        <ul id="todo">
+            <li id="one" class="hot"><em>fresh</em> figs</li>
+            <li id="two" class="hot">pine nuts</li>
+            <li id="three" class="hot">honey</li>
+            <li id="four">balsamic vinegar</li>
+        </ul>
+        <input type="text" id="userInput" name="newItem" size="15" maxlength="50">
+        <button onclick="addItem(document.getElementById('userInput').value)">Add new grocery item</button>
+    </div>
+    <script src="./javascript/main.js"></script>
+</body>
+</html>
