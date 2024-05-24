@@ -1,36 +1,4 @@
-// function checkUsername() {                        // Declare function
-//     var username = elUsername.value;                        // Store username in variable
-//     if (username.length < 5) {                      // If username < 5 characters
-//       elUserNameMsg.className = 'warning';                  // Change class on message
-//       elUserNameMsg.textContent = 'Not long enough, yet...';// Update message
-//     } else {                                        // Otherwise
-//       elUserNameMsg.textContent = '';                       // Clear the message
-//     }
-//   }
-  
-//   function tipUsername() {                          // Declare function
-//     elUserNameMsg.className = 'tip';                        // Change class for message
-//     elUserNameMsg.innerHTML = 'Username must be at least 5 characters'; // Add message
-//   }
-  
-//   var elUsername = document.getElementById('username');     // Username input
-//   var elUserNameMsg = document.getElementById('uname');  // Element to hold message
-  
-//   // When the username input gains / loses focus call functions above:
-//   elUsername.addEventListener('focus', tipUsername, false); // focus call tipUsername()
-//   elUsername.addEventListener('blur', checkUsername, false);// blur call checkUsername()
-
-
-
-
-
-
-
-  
-
-// MY PROGRAM
-
-
+// function called onsubmit - runs all the validation functions
 function isValid() {
     console.log('firstname result - ' + checkFirstName());
     console.log('lastname result - ' + checkLastName());
@@ -411,6 +379,7 @@ function checkState() {
 };
 
 function checkCountry() {
+    tipZipCode();
     var validCountry = false;
     var country = elCountry.value;
     if (country === null || country === "") {
