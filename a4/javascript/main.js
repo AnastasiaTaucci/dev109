@@ -142,7 +142,8 @@ function tipCountry() {
 }
 
 function tipZipCode() {
-    if (elZipCode.value === "USA") {
+    console.log("country value is - " + elCountry.value);
+    if (elCountry.value === "USA") {
         elZipCodeMsg.className = 'tip';                        // Change class for message
         elZipCodeMsg.innerHTML = "5 digits";
     } else {
@@ -200,9 +201,13 @@ function checkFirstName() {
     var firstname = elFirstName.value;
 
     //3) Do validation
-    if (firstname === null || firstname === "" || firstname.length > 20) {
+    if (firstname === null || firstname === "") {
         elFirstNameMsg.className = 'warning';                  // Change class on message
-        elFirstNameMsg.textContent = 'The first name is required and cannot be greater than 20 characters';
+        elFirstNameMsg.textContent = 'The first name is required';
+        console.log("First name invalid — empty")
+    } else if (firstname.length > 20) {
+        elFirstNameMsg.className = 'warning';                  // Change class on message
+        elFirstNameMsg.textContent = 'The first name cannot be greater than 20 characters';
         console.log("First name invalid — length")
     } else if (firstname.match("^[a-zA-Z ,.'-]+$") === null) {
         elFirstNameMsg.className = 'warning';                  // Change class on message
@@ -227,9 +232,13 @@ function checkLastName() {
         var lastname = elLastName.value;
     
         //3) Do validation
-        if (lastname === null || lastname === "" || lastname.length > 50) {
+        if (lastname === null || lastname === "") {
             elLastNameMsg.className = 'warning';                  // Change class on message
-            elLastNameMsg.textContent = 'The last name is required and cannot be greater than 50 characters';
+            elLastNameMsg.textContent = 'The last name is required';
+            console.log("Last name invalid — empty")
+        } else if (lastname.length > 50) {
+            elLastNameMsg.className = 'warning';                  // Change class on message
+            elLastNameMsg.textContent = 'The last name cannot be greater than 50 characters';
             console.log("Last name invalid — length")
         } else if (lastname.match("^[a-zA-Z ,.'-]+$") === null) {
             elLastNameMsg.className = 'warning';                  // Change class on message
@@ -254,7 +263,7 @@ function checkEmail() {
     var dotpos = userEmail.lastIndexOf(".");
     if (userEmail === null || userEmail === ""){
         elEmailMsg.className = 'warning';
-        elEmailMsg.textContent = 'Email required';
+        elEmailMsg.textContent = 'Email is required';
         console.log("Email invalid — empty")
     }
     else if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= userEmail.length) {
@@ -278,12 +287,15 @@ function checkPhone() {
         phone = phone.split('-').join('');
         console.log("the phone is " + phone);
     }
-if (isNaN(phone) || phone.length >15 || phone === null || phone === "") {
+if (isNaN(phone) || phone.length >15) {
     elPhoneMsg.className = 'warning';
     elPhoneMsg.textContent = 'Invalid phone number';
-    console.log("phone invalid — length, empty or NaN");
-}
-else {
+    console.log("phone invalid — length or NaN");
+} else if (phone === null || phone === "") {
+    elPhoneMsg.className = 'warning';
+    elPhoneMsg.textContent = 'Phone number is required';
+    console.log("phone invalid — empty");
+} else {
     elPhone.value = phone.slice(0, 3) + '-' + phone.slice(3, 6) + '-' + phone.slice(6);
     elPhoneMsg.textContent = '';
     validPhone = true;
@@ -298,11 +310,11 @@ function checkUserName() {
     var username = elUserName.value;
     if (username.length > 12) {
         elUserNameMsg.className = 'warning';
-        elUserNameMsg.textContent = 'too long';
+        elUserNameMsg.textContent = 'username is too long';
         console.log("user name invalid — length")
     } else if (username === null || username === "") {
         elUserNameMsg.className = 'warning';
-        elUserNameMsg.textContent = 'Username required';
+        elUserNameMsg.textContent = 'Username is required';
         console.log("user name invalid — empty")
     } else {
         elUserNameMsg.textContent = '';
@@ -322,11 +334,11 @@ function checkPassword() {
 
     if (password.length > 7) {
         elPasswordMsg.className = 'warning';
-        elPasswordMsg.textContent = 'Too long';
+        elPasswordMsg.textContent = 'password is too long';
         console.log("password invalid — length");
     } else if (password === null || password === "") {
         elPasswordMsg.className = 'warning';
-        elPasswordMsg.textContent = 'Password required';
+        elPasswordMsg.textContent = 'Password is required';
         console.log("password invalid — empty");
     } else if (!uppercasePattern.test(password)) {
         elPasswordMsg.className = 'warning';
@@ -357,7 +369,7 @@ function checkAddress() {
     var address = elAddress.value;
     if (address === null || address === "") {
         elAddressMsg.className = 'warning';
-        elAddressMsg.textContent = 'Address required';
+        elAddressMsg.textContent = 'Address is required';
         console.log("address invalid — empty")
     } else {
         elAddressMsg.textContent = '';
@@ -372,7 +384,7 @@ function checkCity() {
     var city = elCity.value;
     if (city === null || city === "") {
         elCityMsg.className = 'warning';
-        elCityMsg.textContent = 'City required';
+        elCityMsg.textContent = 'City is required';
         console.log("city invalid — empty")
     } else {
         elCityMsg.textContent = '';
@@ -388,7 +400,7 @@ function checkState() {
     var state = elState.value;
     if (state === null || state === "") {
         elStateMsg.className = 'warning';
-        elStateMsg.textContent = 'State required';
+        elStateMsg.textContent = 'State is required';
         console.log("state invalid — empty")
     } else {
         elStateMsg.textContent = '';
@@ -403,7 +415,7 @@ function checkCountry() {
     var country = elCountry.value;
     if (country === null || country === "") {
         elCountryMsg.className = 'warning';
-        elCountryMsg.textContent = 'Country required';
+        elCountryMsg.textContent = 'Country is required';
         console.log("country invalid — empty")
     } else {
         elCountryMsg.textContent = '';
