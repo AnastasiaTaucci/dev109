@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: brown;
+}
+
+#image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#slideshow {
+    border: 5px solid rgba(172, 47, 68, 0.751);
+    border-radius: 10px;
+    width: 70%;
+    height: 39.4%;
+}
+
+#caption, #description {
+ font-size: 1.5rem;
+}
+
+#caption {
+    text-transform: uppercase;
+    font-weight: 700; 
+}
+
+button, input {
+    font-size: 1rem;
+    margin-right: 0.5%;
+}
+
+footer p {
+    display: inline-block;
+}
