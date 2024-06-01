@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Spy Game</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>I Spy Game</h1>
+    <h2>See if you can find the following objects on the picture. Once you find them, click on them.</h2>
+    
+    <div id="container">
+        <div id="items">
+            <p id="burger">Burger</p>
+            <p id="rainbow">Rainbow</p>
+            <p id="clock">Clock</p>
+            <p id="pumpkin">Pumpkin</p>
+            <p id="parrot">Parrot</p>
+            <div id="button"></div>
+        </div>
+        <div id="image-container">
+            <img id="game" src="./images/Designer.jpeg" alt="I spy Game" usemap="#image-map">
+        </div>
+    </div>    
+    <map name="image-map">
+        <area data-p="burger" id="burger-pic" alt="Burger" title=""  coords="483,925,75" shape="circle">
+        <area data-p="rainbow" id="rainbow-pic" alt="Rainbow" title=""  coords="514,611,524,773,413,718,368,637" shape="poly">
+        <area data-p="clock" id="clock-pic" alt="Clock" title=""  coords="769,3,791,93,748,114,696,20" shape="poly">
+        <area data-p="pumpkin" id="pumpkin-pic" alt="Pumpkin" title=""  coords="923,690,93" shape="circle">
+        <area data-p="parrot" id="parrot-pic" alt="Parrot" title=""  coords="27,284,134,289,97,426,0,470" shape="poly">
+    </map>
+
+
+
+
+    <script src="./javascript/main.js"></script>
+</body>
+</html>
