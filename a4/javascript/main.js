@@ -244,7 +244,7 @@ function checkEmail() {
   } else if (
     atpos < 1 ||
     dotpos < atpos + 2 ||
-    dotpos + 2 >= userEmail.length
+    dotpos + 2 >= userEmail.length // regex.test(userEmail)   regular_expresion = /^[A-Za-z]+(\.[A-Za-z]+)*@[A-Za-z]+\.[A-Za-z]{2,}$/m
   ) {
     elEmailMsg.className = "warning";
     elEmailMsg.textContent = "Invalid email address";

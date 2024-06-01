@@ -23,6 +23,11 @@
             background: teal;
             position: absolute;
         }
+
+        button, label, select, input, p {
+            z-index: 110;
+            position: relative;
+        }
     </style>
 </head>
 
@@ -92,8 +97,8 @@
            // console.log("NEW size and color are " + size + color);
             let dot = document.createElement("div");
             dot.className = "dot";
-            dot.style.left = (event.pageX - 4) + "px";
-            dot.style.top = (event.pageY - 4) + "px";
+            dot.style.left = (event.pageX - size/2) + "px";
+            dot.style.top = (event.pageY - size/2) + "px";
             dot.style.background = color;
             dot.style.height = size + "px";
             dot.style.width = size + "px";
