@@ -10,11 +10,15 @@
             height: 200px;
             background: beige;
         }
+        p {
+            font-size: 2rem;
+            font-weight: 700;
+        }
     
         .dot {
             height: 8px;
             width: 8px;
-            border-radius: 4px;
+            border-radius: 50%;
             /* rounds corners */
             background: teal;
             position: absolute;
@@ -24,12 +28,52 @@
 
 <body>
     <p>Click anywhere...</p>
+    <label>What is the size of dot?</label><br>
+    <input type="text" id="dotSize" value="8" size="8">
+    <br>
+    <label>Choose color for the dot</label><br>
+    <select id="dotColor">
+        <option value="teal">Teal</option>
+        <option value="#87CEFA">LightSkyBlue</option>
+        <option value="#FF0000">Red</option>
+        <option value="#FF9900">Orange</option>
+    </select>
+    <br><br>
     <button>Clean</button>
+
     <script>
+        let dotColor = document.getElementById("dotColor").value;
+        let dotSize = document.getElementById("dotSize").value;
+        
+        
         let mybutton = document.querySelector("button");
+        let colorChoice = document.getElementById("dotColor");
+        let sizeChoice = document.getElementById("dotSize");
+
         mybutton.addEventListener("click", cleanScreen, false);
+        colorChoice.addEventListener('change', newColor, false);
+        colorChoice.addEventListener('click', stopPropagation, false);
+        sizeChoice.addEventListener('input', newSize, false);
+        sizeChoice.addEventListener('click', stopPropagation, false);
+
+        //console.log("size and color are " + dotSize + dotColor);
+
+
+        function newColor(event) {
+            dotColor = document.getElementById("dotColor").value;
+        }
+
+        function newSize() {
+            dotSize = document.getElementById("dotSize").value;
+        }
+
+        function stopPropagation(event) {
+            event.stopPropagation();
+        }
+
+        
     
-        addEventListener("click", addDot);
+        addEventListener("click", function(event) { addDot(event, dotColor, dotSize) }, false);
     
     
         function cleanScreen(event) {
@@ -44,13 +88,19 @@
         }
     
     
-        function addDot(event) {
+        function addDot(event, color, size) {
+           // console.log("NEW size and color are " + size + color);
             let dot = document.createElement("div");
             dot.className = "dot";
             dot.style.left = (event.pageX - 4) + "px";
             dot.style.top = (event.pageY - 4) + "px";
+            dot.style.background = color;
+            dot.style.height = size + "px";
+            dot.style.width = size + "px";
             document.body.appendChild(dot);
         }
+
+        
     </script>
 </body>
 </html>
