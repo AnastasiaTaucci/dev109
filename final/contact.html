@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Mulish:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="artifacts.html">Artifacts</a></li>
+            <li><a href="modules.html">Module Assignments</a></li>
+            <li id="currentPage"><a href="contact.html">Contact Me</a></li>
+            <li><a href="myhobby.html">My Hobby</a></li>
+            <li><a href="validated.html">Validated</a></li>
+        </ul>
+    </nav>
+    <main id="contact">
+        <h2>Contact Me</h2>
+        <form action="./thankyou.html" method="get" onsubmit="return isValid()">
+            <fieldset>
+                <legend>
+                    Send Me Email:
+                </legend>
+                <!-- <div class="form-container"> -->
+                <div>
+                    <label for="name">
+                    Name:
+                    </label>
+                    <input class="input" id="name" type="text" name="name" maxlength="100">                    
+                    <div id="nameError"></div>
+                </div>
+                <div>
+                    <label for="email">
+                    Email:
+                    </label>
+                    <input class="input" id="email" type="email" name="email" maxlength="100">                    
+                    <div id="emailError"></div>
+                </div>                
+                <div>
+                    <label for="subject">
+                    Subject:
+                    </label>
+                    <input class="input" id="subject" type="text" name="subject" maxlength="200">                    
+                    <div id="subjectError"></div>
+                </div>
+                <!-- </div>                 -->
+                <div class="text-area">
+                   <label for="message">
+                    Message:
+                    </label>
+                    <textarea class="input" name="message" id="message" rows="5"></textarea> 
+                    <div id="messageError"></div>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Send" id="button">
+                </div>                
+            </fieldset>
+        </form>  
+    </main>
+    <script src="javascript/main.js"></script>
+</body>
+</html>

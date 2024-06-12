@@ -1,0 +1,487 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #e9ebef;
+    height: 100%;
+    background-image: url(../images/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+} 
+
+nav {
+    width: 100%;
+    position: fixed;
+    background-color: #add8e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0.9;
+}
+
+nav ul {
+    display: flex;
+    font-size: 1.8em;
+    font-family: 'Merriweather', serif;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 1.5%;
+}
+
+nav a {
+    transition: color 0.25s;
+    color: darkblue;
+}
+
+nav a:hover {
+    color: white;
+}
+
+#currentPage a{
+    color: #FF6347;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+header {
+    height: 10%;
+    top: 10%;
+    text-align: center;
+    position: relative;
+}
+
+
+h1 {
+    font-size: 4.5rem;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 5px;
+    color: #eef0e7;
+}
+
+
+/* Home page */
+
+#welcome {
+    font-size: 1.5em;
+    font-family: 'Mulish', sans-serif;
+    color: #bfd6d3;
+    margin: 15% 20% 0;
+    line-height: 2em;
+    text-align: justify;
+}
+
+
+/* About Me Page */
+
+#about {
+    display: flex;
+    margin-top: 7%;
+    text-align: justify;
+}
+
+#about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5em;
+    font-family: 'Mulish', sans-serif;
+    color: #bfd6d3;
+    margin-left: 5%;
+    line-height: 1.5em;
+}
+
+#portrait {
+    width: 20%;
+    margin: 1% 5%;
+}
+
+
+
+/* Courses */
+
+#courses-h h1{
+    margin: 2% 0 0 0;
+}
+
+#courses {
+    margin: 0 4%;
+    font-size: 1.5em;
+    font-family: 'Mulish', sans-serif;
+    color: #bfd6d3;
+    letter-spacing: 1.5px;
+}
+
+#header, #dev-109, #dev-110, #busit {
+    display: flex;
+}
+
+#header {
+    font-size: 1.7em;
+    font-weight: 700;
+    border-bottom: 5px dotted lightskyblue;
+    color: #d6eff7;
+}
+
+#courses p {
+    margin: 0.7% 1%;
+}
+
+.course-name {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#courses a {
+    color: #bfd6d3;
+}
+
+#courses a:hover {
+    color: white;
+}
+
+.instructor-name {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reflection {
+    width: 1000px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Artifacts  */
+
+#artifacts-h {
+    top: 15%;
+}
+
+.artifacts {
+    position: relative;
+    top: 25%;
+    max-width: 95%;
+    text-align: center;
+    display: flex;
+    margin: 2% auto;
+    justify-content: space-evenly;
+}
+
+.artifacts img {
+    height: 153px;
+    width: 272px;
+}
+
+.artifacts img:hover {
+    height: 162px;
+    width: 288px;
+    transition: 0.25s;    
+}
+
+a h3{
+    color: #d6eff7;
+    font-size: 1.5em;
+    margin: 3%;
+}
+
+a h3:hover {
+    color: white;
+    font-size: 1.7em;
+    transition: 0.25s;    
+}
+
+.artifacts p {
+    color: #bfd6d3;
+    font-size: 1.5rem;
+    margin: 2% 5%;
+}
+
+.artifacts div {
+    width: 20%;
+}
+
+/* Module Assignments */
+
+#header-2 h1{
+    font-size: 2.5em;
+    color: whitesmoke;
+}
+
+.modules {
+    position: relative;
+    top: 10%;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.modules div {
+    width: 25%;
+}
+
+.modules img {
+    height: 153px;
+    width: 272px;
+}
+
+.modules img:hover {
+    height: 162px;
+    width: 288px;
+    transition: 0.3s;    
+}
+
+.modules a h3 {
+    margin: 2%;
+}
+
+.modules p {
+    color: #bfd6d3;
+    font-size: 1.2rem;
+    margin: 0 0 4%;
+}
+
+
+
+
+/* Contact Me */
+
+#contact {
+    top: 8%;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 40%;
+    color: #eef0e7;
+}
+
+h2 {
+    font-size: 3.5em;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 3px;   
+    margin-bottom: 3%; 
+}
+
+form {
+    font-family: 'Merriweather', serif;
+    letter-spacing: 3px;
+}
+
+fieldset {
+    border-radius: 10px;
+    padding: 30px;
+    backdrop-filter: blur(20px);
+    border: 3px solid white;
+}
+
+legend {
+    font-size: 1.7em;
+}
+
+label {    
+    width: 17%;
+    float: left;
+    text-align: right;
+    padding-right: 1%;
+}
+
+.input {
+    width: 83%;
+}
+
+fieldset div {
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+
+#button {
+    min-width: 150px;
+    min-height: 30px;
+    font-size: 1.3em;
+    color: #6495ED;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    float: right;
+}
+
+.warning {
+    font-size: 0.9em;
+    color: #FF6347;
+    font-weight: bold;
+    background-image: url('../images/warning.png');
+    background-repeat: no-repeat;
+    background-position: 2px 14px;
+    padding: 10px 0 0 22px;
+    margin: 0 17% 10px;
+    text-align: left;
+}
+
+#thankyou-h {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#thankyou-h h1 {
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    line-height: 1.5em;
+    color: #d6eff7;
+}
+
+
+
+/* My hobby page */
+
+#hobby {
+    display: flex;
+    margin: 5% auto 1.5%;
+    text-align: justify;
+    width: 95%;
+    height: 60%;
+}
+
+
+#info {
+    font-size: 1.7em;
+    font-family: 'Mulish', sans-serif;
+    color: #bfd6d3;
+    line-height: 1.5em;
+    width: 40%;
+}
+
+#info p {
+    margin: 0 0 1.5%;
+}
+
+#hobby a {
+    color: #daefec;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+#hobby a:hover {
+    color: white;
+}
+
+#media {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#media img, #media iframe {
+    width: 90%;
+    height: 50%;
+    margin: 2.5% auto;
+}
+
+#animation {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#animation img {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+audio {
+    margin-left: 5% ;
+}
+
+
+/* validated */
+
+.validated {
+    text-align: center; 
+    display: flex;
+    width: 95%;
+    height: 100%;
+    margin: 5% auto;
+    font-size: 2rem;
+    color: #d6eff7;
+    overflow: auto;
+}
+
+.validated h3 {
+    font-size: 1.2em;
+    margin-top: 30px;
+}
+
+.images-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 1.25rem;
+}
+
+.images-container div {
+    margin: 1%;
+}
+
+.validated img {
+    height: 108px;
+    width: 192px;
+}
+
+.validated img:active, .validated img:focus {
+    height: 90vh;
+    width: auto; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    z-index: 9999; 
+    transform: translate(-50%, -50%); 
+    filter: brightness(0.8); 
+}
+
+.validated img:hover {
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+
+.validated p {
+    margin: 5%;
+}
+
+#html {
+    width: 70%;
+}
+
+#html h3 {
+    text-align: left;
+    margin-left: 30%;
+}
+
+#css {
+    width: 30%;
+}
